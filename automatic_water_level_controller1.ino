@@ -5,7 +5,7 @@ int cm = 0;
 
 long readUltrasonicDistance(int triggerPin, int echoPin)
 {
-  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  pinMode(triggerPin, OUTPUT);  
   digitalWrite(triggerPin, LOW);
   delayMicroseconds(2);
    for 10 microseconds
@@ -88,6 +88,6 @@ void loop()
     digitalWrite(4, HIGH);
     digitalWrite(5, HIGH);
     digitalWrite(8, LOW);
-    tone(6, 523, 1000); // play tone 60 (C5 = 523 Hz)
+    tone(6, 523, 1000); 
   }
 }
