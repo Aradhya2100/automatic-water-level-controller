@@ -1,5 +1,4 @@
-// C++ code
-//
+
 int distanceTreshold = 0;
 
 int cm = 0;
@@ -9,12 +8,12 @@ long readUltrasonicDistance(int triggerPin, int echoPin)
   pinMode(triggerPin, OUTPUT);  // Clear the trigger
   digitalWrite(triggerPin, LOW);
   delayMicroseconds(2);
-  // Sets the trigger pin to HIGH state for 10 microseconds
+   for 10 microseconds
   digitalWrite(triggerPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(triggerPin, LOW);
   pinMode(echoPin, INPUT);
-  // Reads the echo pin, and returns the sound wave travel time in microseconds
+   sound wave travel time in microseconds
   return pulseIn(echoPin, HIGH);
 }
 
@@ -47,7 +46,8 @@ void loop()
     digitalWrite(5, LOW);
     digitalWrite(8, HIGH);
     noTone(6);
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(1000); 
+ millisecond(s)
     digitalWrite(2, HIGH);
   }
   if (cm <= distanceTreshold - 75 && cm > distanceTreshold - 150) {
@@ -57,7 +57,8 @@ void loop()
     digitalWrite(5, LOW);
     digitalWrite(8, HIGH);
     noTone(6);
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(1000);
+ millisecond(s)
     digitalWrite(3, HIGH);
   }
   if (cm <= distanceTreshold - 150 && cm > distanceTreshold - 225) {
@@ -67,7 +68,8 @@ void loop()
     digitalWrite(5, LOW);
     digitalWrite(8, HIGH);
     noTone(6);
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(1000); 
+ millisecond(s)
     digitalWrite(4, HIGH);
   }
   if (cm <= distanceTreshold - 225 && cm > distanceTreshold - 285) {
@@ -76,7 +78,8 @@ void loop()
     digitalWrite(4, HIGH);
     digitalWrite(5, LOW);
     digitalWrite(8, HIGH);
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(1000);
+ millisecond(s)
     digitalWrite(5, HIGH);
   }
   if (cm <= distanceTreshold - 285) {
